@@ -41,9 +41,10 @@ p {
   margin-top: 50px;
   padding: 10px;
   border-radius: 20px;
-  border-style: none;
   width: 8rem;
   background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  text-align: center;
 }
 .sedans .button {
   color: hsla(31, 77%, 52%, 0.75);
@@ -51,8 +52,13 @@ p {
 .suvs .button {
   color: hsla(184, 100%, 22%, 0.75);
 }
-.sedans .button {
+.luxury .button {
   color: hsla(179, 100%, 13%, 0.75);
+}
+.button:hover{
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
 }
 @media only screen and (min-width: 1140px) {
   main {
