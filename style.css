@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+main {
+  width: 90%;
+  margin: 60px auto;
+}
+.box {
+  padding: 50px;
+}
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 10px 0 0;
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 10px 10px;
+}
+h2 {
+  padding: 40px 0;
+  color: hsl(0, 0%, 95%);
+  font-family: Big Shoulders Display;
+  font-size: 3rem;
+  font-weight: 700;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: Lexend Deca;
+  font-weight: 400;
+}
+.button {
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 20px;
+  border-style: none;
+  width: 8rem;
+  background-color: hsl(0, 0%, 95%);
+}
+.sedans .button {
+  color: hsla(31, 77%, 52%, 0.75);
+}
+.suvs .button {
+  color: hsla(184, 100%, 22%, 0.75);
+}
+.sedans .button {
+  color: hsla(179, 100%, 13%, 0.75);
+}
+@media only screen and (min-width: 1140px) {
+  main {
+    display: flex;
+    width: 69%;
+    height: 70vh;
+    margin: 15vh auto;
+  }
+  .sedans {
+    border-radius: 10px 0 0 10px;
+  }
+  .luxury {
+    border-radius: 0 10px 10px 0;
+  }
+  .box {
+    position: relative;
+  }
+  p {
+    height: calc(100% - 220px - 3rem);
+    min-height: max-content;
+    display: flex;
+    align-items: center;
+  }
+  .button {
+    margin: 0;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+  }
+}
